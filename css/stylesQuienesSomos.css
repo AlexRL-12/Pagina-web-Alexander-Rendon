@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+
+:root {
+    /*Le doy los grados con deg y los colores con # si quiero agregar mas colores le doy la terminación en cero y la otra en 100%*/
+    /* Creo mi variable blackground y le doy los valores*/
+    --background: linear-gradient(135deg, #667eea7e 0%, #764ba298 100%);
+    --color-primary: #667eea;
+    --color-secondary: #764ba2;
+    --botton-padding: 20px 40px;
+}
+
+body{
+	background: #f2f2f2;
+	font-family: 'Raleway';
+}
+
+header{
+    width: 100%;
+    height: 650px;
+    background: #bc4e9c;
+    background-repeat: no-repeat;
+    block-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    background: linear-gradient(135deg, #667eea7e 0%, #764ba298 100%), url(../img/services12.jpg);
+
+}
+
+main{
+    background: white;
+}
+
+.flex{
+	width: 100%;
+	height:100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.textos{
+	padding:100px;
+	color: black;
+	text-align: center;
+}
+
+.atext2{
+    padding-top: 10px;
+    display: inline-block;
+    background: var(--color-primary);
+    padding: 20px 40px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 40px;
+    padding-bottom: 20px 40px;
+    width: max-content;
+
+}
+
+.atext3{
+    padding-top: 10px;
+    display: inline-block;
+    background: var(--color-primary);
+    padding: 20px 40px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 40px;
+    padding-bottom: 20px 40px;
+    width: max-content;
+    
+}
+
+.wave{
+    position: absolute;
+    /*Para que se pase a la parte final*/
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+
+.modal{
+	display: none;
+	position: fixed;
+	z-index:1;
+	overflow: auto;
+	left: 0;
+	top:0;
+	width: 100%;
+	height:100%;
+	background: rgba(0, 0, 0, 0.452);
+}
+
+.contenido-modal{
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	width: 30%;
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, .4);
+	animation-name: modal;
+	animation-duration: 1s;
+    text-align: center;
+}
+@keyframes modal{
+	from{top:-330px; opacity:0;}
+	to{top:0; opacity:1;}
+    
+}
+.close{
+	color: #f2f2f2;
+	font-size:30px;
+	font-weight: bold;
+}
+.close:hover{
+	color:#7f8c8d;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.modal-header, .footer{
+	padding: 8px 16px;
+	background: linear-gradient(135deg, #667eea7e 0%, #764ba298 100%);
+	color:#000000;
+    text-align: center;
+}
+
+p{
+	text-align: justify;
+}
+
+.modal-body{
+	padding: 20px 16px;
+}
+
+@media screen and (max-width:900px){
+	.contenido-modal{
+		width: 70%;
+	}
+	.textos{
+		padding: 150px;
+	}
+}
+
+@media screen and (max-width:500px){
+	.textos{
+		padding:50px;
+	}
+}
+
+.navPrincipal{
+    display: flex;
+    justify-content: flex-end;
+    height: 70px;
+    align-items: center;
+    font-weight: 700;
+    margin-bottom: 50px;
+    text-decoration: none;
+}
+
+.mnu{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 10px 15px;
+    /*hereda el peso de la fuente*/
+    font-weight: inherit;
+    padding: 10px;
+    
+}
+
+.mnu:hover{
+    font-weight: 300;
+    justify-content: flex-start;
+    text-decoration: none;
+    color: white;
+}
+
+.atext{
+    padding-top: 10px;
+    display: inline-block;
+    background: #fff;
+    padding: 20px 40px;
+    color: rgb(10, 9, 9);
+    text-decoration: none;
+    border-radius: 40px;
+    padding-bottom: 20px 40px;
+    width: max-content;
+    margin-left: 40px;
+
+}
+
+h1{
+	font-size: 40px;
+	margin-bottom:20px;
+    color:rgb(0, 0, 0);
+    margin-bottom: 30px;
+    margin-left: 10px;
+
+}
+
+h2{
+    
+    color: #667eea;
+    font-size: 2.5rem;
+    margin-bottom: 32px;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.presentation {
+    padding-top: 0%;
+    text-align: center;
+    
+}
+
+.presentation_picture{
+    width: 150px;
+    height: 150px;
+    border-radius: 70%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.presentation__copy{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.presentation__cta{
+    display: inline-block;
+    margin-top: 30px;
+    background: var(--color-primary);
+    color: #fff;
+    text-decoration: none;
+    padding: var(--botton-padding);
+    border-radius: 40px;
+
+}
+
+/* Ahora la parte acerca de la emprea */
+
+.about{
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 80px;
+    justify-items: center;
+    align-items: center;
+    padding-top: 80px;
+    text-align: center;
+    
+}
+
+.about__img{
+    text-align: center;
+}
+
+.about__img--left{
+    text-align: left;
+}
+
+.about__picture{
+    max-width: 80%;
+}
+
+.about__paragraph{
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 300;
+
+}
+
+.containerpresentation {
+    /*Doy un margen, un color y el overflow para esconder lo que salga delñ contenerdor */
+    width: 90%;
+    margin: 0 auto;
+    /*Limita la pagina*/
+    overflow: hidden;
+    padding: 3px 0;
+    max-width: 1200px;
+    background: white;
+}
+
+    /* Footer */
+
+/* footer */
+
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: #ccc;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+    }
+
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 90%;
+    }
+
+    .imagen-about-us{
+        width: 90%;
+    }
+
+    /* Galeria */
+
+    .imagen-port{
+        width: 44%;
+    }
+
+    /* Clientes */
+
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards .card{
+        width: 90%;
+    }
+
+    .cards .card:first-child{
+        margin-bottom: 30px;
+    }
+
+    /* servicios */
+
+    .servicio-cont{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .servicio-ind{
+        width: 100%;
+        text-align: center;
+    }
+
+    .servicio-ind:nth-child(1), .servicio-ind:nth-child(2){
+        margin-bottom: 60px;
+    }
+
+    .servicio-ind img{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:500px){
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+
+    nav > a{
+        margin-right: 5px;
+    }
+
+    .textos-header h1{
+        font-size: 35px;
+    }
+
+    .textos-header h2{
+        font-size: 20px;
+    }
+
+    /* ABOUT US */
+
+    .imagen-about-us{
+        margin-bottom: 60px;
+        width: 99%;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 95%;
+    }
+
+    /* Galeria */
+
+    .imagen-port{
+        width: 95%;
+    }
+
+    /* Clients */
+
+    .cards .card{
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards .card img{
+        width: 90px;
+        height: 90px;
+    }
+
+    /* Footer */
+
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+    }
+
+    .content-foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .content-foo h4{
+        border: none;
+    }
+
+    .content-foo p{
+        color: #ccc;
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+    }
+
+    .titulo-final{
+        font-size: 20px;
+    }
+}
+
+.h2Modal{
+    color: black;
+    text-align: center;
+}
+
+
+/* -------- */
+
+
+.Modal-Contenido{
+    background: rgb(150, 150, 150);
+    width:600px;
+    padding: 10px 20px ;
+    margin: auto;
+    position: relative;
+
+  }
+  .Modal{
+    background-color: rgba(0,0,0,.8);
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:0;
+    pointer-events:none;
+    transition: all 1s;
+    
+  }
+  #MiModal:target{
+    opacity:1;
+    pointer-events:auto;
+  }
+
+  .h2Modal2{
+    color: black;
+    text-align: center;
+}
+  
+
+.Modal-Contenido1{
+    /* background-color:rgb(255, 255, 255); */
+    background: rgb(150, 150, 150);
+    width:600px;
+    padding: 10px 20px ;
+    margin: auto;
+    position: relative;
+
+  }
+  .Modal1{
+    background-color: rgba(0,0,0,.8);
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:0;
+    pointer-events:none;
+    transition: all 1s;
+    
+  }
+  #MiModal1:target{
+    opacity:1;
+    pointer-events:auto;
+  }
+
+  .h2Modal2{
+    color: black;
+    text-align: center;
+}
+  
+.presentation__copy1{
+    text-align: center;
+}

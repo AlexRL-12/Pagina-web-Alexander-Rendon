@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quienes somos</title>
+    <link rel="stylesheet" href="/css/stylesQuienesSomos.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/Alex´s Logo.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navPrincipal">
+
+            <a class="mnu" href="index.html">Inicio</a>
+            <a class="mnu" href="registro.html">Registrarte</a>
+            <a class="mnu" href="login.html">Iniciar sesión</a>
+            <a class="mnu" href="contratarServicio.html">Servicios</a>
+            <!-- <a href="#">Contacto</a> -->
+        </nav>
+
+        <div class="textos">
+            <h1>Aquí podras informarte sobre | Alex's Company </h1>
+            <a class="atext" href="#" id="abrir">Nuestra compañia</a>
+        </div>
+
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg></div>
+
+    </header>
+
+    <div id="miModal" class="modal">
+        <div class="flex" id="flex">
+            <div class="contenido-modal">
+                <div class="modal-header flex">
+                    <h2 class="h2Modal">Alex's Company</h2>
+                    <span class="close" id="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <iframe width="375" height="400" src="https://www.youtube.com/embed/Ycs7gq_fRcA"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="footer">
+                    <h3>Alex's Company &copy;</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/main.js"></script>
+
+    <main>
+        <div class="containerpresentation">
+            <!--Creo mi sección con clase de presemtación-->
+            <section class="presentation container">
+                <!--Creo mi imagen y mi titulo para esete espacio en especifico-->
+                <img src="/img/Alex.jfif" alt="Alex's Company" class="presentation_picture">
+                <h2 class="subtitle">Fundador: Alexander Rendón</h2>
+                <!--Creo mi parrafo para lo que quiera dar a comunicar-->
+                <p class="presentation__copy1">Ingeniero informático egresado de la universidad Autónoma Latinoamerica, reconocido por su gran gestion en las empresas a su cargo, en las cuales se les brinda soporte a los clientes.</p>
+                <a href="contratarServicio.html" class="presentation__cta">Contactanos ahora</a>
+            </section>
+
+            <!--Creo otras sección para otro contenido.-->
+            <section class="about container">
+                <div class="about__texts">
+                    <h2 class="subtitle">Equipo de trabajo</h2>
+                    <p class="about__paragraph">El trabajo en equipo es muy importante para que la empresa triunfe y llegue a la consecución de los objetivos de negocio. Porque cada empleado de ese equipo desempeñará un rol concreto en función de sus fortalezas que, junto a los del resto, mejorará los resultados generales. Por lo tanto, un buen trabajo en equipo mejora la productividad. Sin embargo, uno malo, puede generar todo lo contrario.</p>
+                    <p class="about__paragraph">En nuestra empresa procuramos tener una buena comunicación y efectividad a la hora de desarrollar un trabajo por eso se procura tenner un buen espacio de trabajo y se evaluan a las personas según sus comportamientos para de esta manera formar un grupo integro.</p>
+
+                    <!-- <div class="textos1">
+                        <a class="atext2" href="#" id="abrir">Ver</a>
+                    </div> -->
+
+                    <a href="#MiModal" class="atext2">ver</a>
+                    <div id="MiModal" class="Modal">
+                        
+                      <div class="Modal-Contenido">
+                        <div class="modal-header flex">
+                            <h2 class="h2Modal2">Equipo de trabajo</h2>
+                            <a href="#">&times;</a>
+                        </div>
+                        <iframe width="560" height="330" src="https://www.youtube.com/embed/5zz5vFRDMWM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="footer">
+                            <h3>Alex's Company &copy;</h3>
+                        </div>  
+                    </div>
+                    
+                    </div>
+                </div>
+
+                
+
+                <!--Para agregar una imagen-->
+                <figure class="about__img">
+                    <img src="/img/ilustracion13.svg" alt="Alex's Company" class="about__picture">
+                </figure>
+
+
+                <!--Agrego una imagen hacia la izquuierda-->
+                <figure class="about__img about__img--left">
+                    <img src="/img/ilustracion14.svg" alt="Alex's Company" class="about__picture">
+                </figure>
+
+                <div class="about_texts">
+                    <h2 class="subtitle">Instalaciones</h2>
+                    <p class="about__paragraph">Las instalaciones de una empresa no solo son el espacio físico donde se localiza, sino también el lugar donde se desenvuelve y se lleva a cabo el proceso productivo de la misma. De ahí lo importante de que cada decisión que sea tomada en cuanto al diseño y distribución de la empresa, sea el adecuado.</p>
+                    <p class="about__paragraph">La productividad parte de un buen espacio de trabajo por lo que en Alex's company le damos los mejores espacios tanto para el cliente como para los trabajadores.</p>
+
+                    <!-- <div class="textos2">
+                        <a class="atext3" href="#" id="abrir">Ver</a>
+                    </div> -->
+
+                    <a href="#MiModal1" class="atext3">ver</a>
+                    <div id="MiModal1" class="Modal1">
+                        
+                      <div class="Modal-Contenido1">
+                        <div class="modal-header flex">
+                            <h2 class="h2Modal">Instalaciones</h2>
+                            <a href="#">&times;</a>
+                        </div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/6ydX0SQyCLY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          <div class="footer">
+                            <h3>Alex's Company &copy;</h3>
+                        </div>  
+                    </div>
+                    </div>
+                </div>
+
+
+                </div>
+        </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <img src="/img/whpico.png">
+                <h4>Phone</h4>
+                <p>+573225158266</p>
+            </div>
+            <div class="content-foo">
+                <img src="/img/e-mail.png">
+                <h4>E-mail</h4>
+                <p>rendona299@gmail.com</p>
+            </div>
+            <div class="content-foo">
+                <img src="/img/location.png" >
+                <h4>Location</h4>
+                <p>Cr 63B #51-79</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; Alex's Company</h2>
+    </footer>
+
+</body>
+
+</html>
